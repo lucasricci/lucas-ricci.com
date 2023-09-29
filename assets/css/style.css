@@ -88,6 +88,8 @@ a {
 	color: white;
 }
 
+/* NAV */
+
 .site-nav li {
 	list-style-type: none;
 }
@@ -119,6 +121,8 @@ a {
 	line-height: 1.6;
 }
 
+/* Homepage */
+
 .hero {
 	max-width: 100%;
 	display: flex;
@@ -137,6 +141,8 @@ a {
 	font-size: 1.125rem;
 	margin-inline: 20rem;
 }
+
+/* Contact */
 
 .site-contact {
 	display: grid;
@@ -244,4 +250,11 @@ a {
 	.content {
 		padding-inline: 2rem;
 	}
+}
+
+/* Projects */
+
+.site-project {
+	display: flex;
+	flex-direction: column;
 }
