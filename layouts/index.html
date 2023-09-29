@@ -1,0 +1,36 @@
+{{ partial "header.html" . }}
+
+<section class="hero">
+	<div>
+		<h1>{{ .Title }}</h1>
+		<p>{{ .Description | markdownify }}</p>
+	</div>
+</section>
+
+{{ .Content }}
+
+<div class="text">
+	<ul>
+		<li>📜 Veja meus scripts e dotfiles <a href="https://github.com/lucasricci/dotfiles" target="_blank">aqui</a></li>
+		<li>📡 Conecte se comigo <a href="https://www.linkedin.com/in/lucaslricci/" target="_blank">aqui</a></li>
+		<li>⭐ Caso tenha gostado, de uma estrela <a href="https://github.com/lucasricci/lucas-ricci.com" target="_blank">por favor</a></li>
+		<li>📖 Indicações de Livros:</li>
+		<ul>
+			<li>Guia do Mochileiro das Galáxias de <a href="https://a.co/d/aKa6EVb" target="_blank">Douglas Adams</a></li>
+			<li>Trilogia da Fundação de <a href="https://a.co/d/du3HW4k" target="_blank">Isaac Asimov</a></li>
+			<li>Duna: Livro I de <a href="https://a.co/d/2vdlJDW" target="_blank">Frank Herbert</a></li>
+		</ul>
+	</ul>
+</div>
+
+<h2>Últimos posts</h2>
+<ul class="home-posts">
+	{{ range ( where .Site.RegularPages "Type" "blog" | first 5 ) }}
+	<li class="home-posts-item">
+		<time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
+		<a href="{{ .Permalink }}">{{ .Title }}</a>
+	</li>
+	{{end}}
+</ul>
+
+{{ partial "footer.html" . }}

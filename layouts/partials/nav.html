@@ -1,0 +1,33 @@
+<header class="site-header">
+	<nav class="site-nav">
+		<img
+			class="logo"
+			src="/favicon.png"
+			alt="icon"
+			width="48px"
+			height="48px"
+		/>
+
+		<ul class="menu">
+			{{ range .Site.Menus.main.ByWeight }}
+			<li>
+				<a href="{{ .URL }}"
+					><img
+						src="/icons/{{ .Name }}.svg"
+						alt="{{ .Name }}"
+						width="24px"
+				/></a>
+			</li>
+			{{ end }} {{ range .Site.Menus.social.ByWeight }}
+			<li>
+				<a href="{{ .URL }}" target="_blank"
+					><img
+						src="/icons/{{ .Name }}.svg"
+						alt="{{ .Name }}"
+						width="24px"
+				/></a>
+			</li>
+			{{ end }}
+		</ul>
+	</nav>
+</header>

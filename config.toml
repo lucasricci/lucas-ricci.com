@@ -1,0 +1,29 @@
+baseURL = 'http://lucas-ricci.com/'
+title = 'Lucas Ricci'
+
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 10
+
+    [[menu.main]]
+        name = "Projetos"
+        url = "/projetos"
+        weight = 20
+
+    [[menu.main]]
+        name = "Contato"
+        URL = "/contato"
+        weight = 30
+
+    [[menu.social]]
+        name = "Github"
+        url = "https://github.com/lucasricci"
+        weight = 40
+
+    [[menu.social]]
+        name = "Medium"
+        url = "https://medium.com/@llricci"
+        weight = 50
+
