@@ -88,10 +88,15 @@ a {
 	color: white;
 }
 
+ul {
+	padding: 0;
+}
+
 /* NAV */
 
 .site-nav li {
 	list-style-type: none;
+	padding-left: 0;
 }
 
 .site-nav {
@@ -103,15 +108,12 @@ a {
 
 .menu {
 	display: flex;
-	gap: 0;
+	gap: 1rem;
 }
 
 .menu li > a {
 	cursor: pointer;
-}
-
-.menu a {
-	padding: 7px 10px;
+	text-decoration: none;
 }
 
 .content {
@@ -206,21 +208,23 @@ a {
 	text-align: center;
 }
 
+/* Responsible */
+
 @media (max-width: 768px) {
 	.site-nav {
-		width: max-content;
+		width: 100%;
 		justify-content: center;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.menu {
 		transform: scale(1.25);
-		padding-right: 1rem;
-		padding-left: 4.5rem;
+		width: fit-content;
 	}
 
 	.logo {
 		display: none;
-	}
-
-	.menu {
-		padding-left: 0;
 	}
 
 	.hero div > h1 {
