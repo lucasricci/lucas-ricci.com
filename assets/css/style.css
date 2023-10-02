@@ -141,6 +141,7 @@ ul {
 .hero div > p {
 	flex-basis: 35%;
 	font-size: 1.125rem;
+	font-size: 1.25em;
 	margin-inline: 20rem;
 }
 
@@ -189,10 +190,12 @@ ul {
 }
 
 .home-posts {
-	padding: 0;
+	padding: 1rem 0 0 0;
 }
 
 .home-posts-item {
+	list-style: none;
+	padding-left: 1rem;
 	margin-bottom: 1rem;
 }
 
@@ -228,12 +231,11 @@ ul {
 	}
 
 	.hero div > h1 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 
 	.hero div > p {
-		font-size: 1rem;
-		margin-inline: 3rem;
+		margin: 0;
 	}
 
 	.site-footer {
@@ -247,12 +249,23 @@ ul {
 	.text {
 		letter-spacing: 0.05em;
 		word-spacing: 0.05em;
-		font-size: 0.8rem;
-		padding: 1rem;
+		font-size: 0.9rem;
+		padding: 2rem;
 	}
 
 	.content {
 		padding-inline: 2rem;
+	}
+}
+
+@media (max-width: 1200px) {
+	.home-posts {
+		padding-left: 2rem;
+	}
+
+	.hero div > p {
+		font-size: 1rem;
+		margin-inline: 3rem;
 	}
 }
 
