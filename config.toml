@@ -23,7 +23,7 @@ title = 'Lucas Ricci'
         weight = 40
 
     [[menu.social]]
-        name = "Medium"
-        url = "https://medium.com/@llricci"
+        name = "Livro"
+        url = "/livros"
         weight = 50
 

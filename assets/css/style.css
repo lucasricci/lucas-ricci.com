@@ -174,11 +174,10 @@ ul {
 
 	margin-bottom: 1rem;
 	border-radius: 1rem;
-	padding: 3rem;
+	padding: 2rem;
 	background-color: #36516c;
 
 	justify-content: center;
-	/* align-items: center; */
 	margin: 1rem auto 1rem;
 
 	text-align: left;
@@ -249,18 +248,19 @@ ul {
 	.text {
 		letter-spacing: 0.05em;
 		word-spacing: 0.05em;
-		font-size: 0.9rem;
-		padding: 2rem;
+		font-size: 0.87rem;
+		padding-inline: 1.8rem;
+		padding-block: 1rem;
 	}
 
 	.content {
-		padding-inline: 2rem;
+		padding-inline: .5rem;
 	}
 }
 
 @media (max-width: 1200px) {
 	.home-posts {
-		padding-left: 2rem;
+		padding-left: 1rem;
 	}
 
 	.hero div > p {
