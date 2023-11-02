@@ -17,13 +17,14 @@ title = 'Lucas Ricci'
         URL = "/contato"
         weight = 30
 
+    [[menu.main]]
+        name = "Livro"
+        url = "/livros"
+        weight = 40
+        
     [[menu.social]]
         name = "Github"
         url = "https://github.com/lucasricci"
-        weight = 40
-
-    [[menu.social]]
-        name = "Livro"
-        url = "/livros"
         weight = 50
+
 
